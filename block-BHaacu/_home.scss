@@ -1,0 +1,306 @@
+// header
+
+
+
+.header {
+    .contect-header {
+        background-color: $primary-color ;
+        padding: 0.7rem 0;
+
+        .container div div:nth-child(n) {
+            margin-right: 2rem;
+            font-size: 1.2rem;
+
+            a {
+                margin-right: 0.5rem;
+            }
+
+        }
+
+        div nav:nth-child(2) i {
+            color: white;
+            margin-left: 2rem;
+            font-size: 1.2rem;
+        }
+
+    }
+
+    .nev-bar {
+        background-color: $header-color;
+        
+        color: $link-text-color;
+
+        .container .brand {
+            font-size: 2.2rem;
+            font-weight: 900;
+
+            h2 {
+                color: black;
+            }
+
+            .active {
+                color: $active-color;
+            }
+
+
+        }
+
+        .container .nav-links {
+            font-weight: 800;
+             cursor: pointer;
+           
+            li {
+                margin-left: 2rem;
+
+                a{
+                    color: $link-text-color;
+                }
+                
+            }
+
+            
+
+            .sub-menu{
+                position: relative;
+               
+                
+                .sub-nav{
+                    position: absolute;
+                    background-color: $header-color;
+                    border-radius: 5px;
+                    box-shadow: 0px 0px 10px 1px gray;
+                    width: 210px;
+                    left: -46%;
+                    transform: translate(-1%);
+                     display: none;
+                    top: 48px;
+                    padding: 1rem 0;
+                    text-align: left;
+                    margin-right: 1rem;
+                    li{
+                        margin-top: 1.5rem;
+                        font-size: 1.2rem;
+                        
+                    }
+                   
+                    
+                }
+                 span{
+                    margin-left: 1rem;
+                }
+
+              
+
+               
+            }
+
+            .sub-menu:hover .sub-nav{
+                display: inline-block;
+            }
+        }
+        
+    }
+
+    
+
+}
+
+// hero-section
+.hero {
+    background-image: url(assets/media/banner-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 17rem 0;
+
+    .container {
+        color: black;
+        margin-top: 8rem;
+    }
+
+    .heading {
+        font-size: 3.5rem;
+        line-height: 1.2;
+        font-weight: 900;
+        margin-bottom: 1rem;
+    }
+
+    .container p {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .btn {
+        @include btn;
+        background-color: $primary-color;
+        color: white;
+        margin-top: 2rem;
+        border: 0;
+
+        &:hover {
+            background-color: white;
+            color: $primary-color;
+            border: 1px solid $primary-color;
+        }
+    }
+}
+
+// services-section
+
+.services-text-col{
+    margin-bottom: 6rem;
+  p{
+    color: $text-color;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+  }
+}
+
+.services-article{
+    border: 3px solid rgba(208, 203, 203, 0.439);
+    border-radius: 10px;
+    padding: 4rem 2rem;
+
+    img{
+        width: 20%;
+    }
+
+    h4{
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-top: 2rem;
+    }
+
+    p{
+        margin: 1rem 0;
+        line-height: 2;
+        font-size: 1.1rem;
+       color: $text-color
+    }
+
+    .btn {
+        @include btn;
+        background-color: white;
+        margin-top: 2rem;
+    }
+}
+
+// solution-section
+
+.solutions-col{
+   background-color: $solution-bg-color; 
+   .solutions-text{
+    padding: 7rem 0;
+
+    p{
+        color: $text-color;
+        font-size: 1.2rem;
+        margin: 2rem 0;
+    }
+
+    .btn{
+        @include btn
+    }
+
+   }
+
+}
+
+// consuleting-section
+
+.consulting-text{
+    img{
+        width: 10%;
+    }
+
+    h3{
+        margin: 1.5rem 0;
+    }
+
+    p{
+        color: $text-color;
+        margin-bottom: 3rem
+    }
+
+    .btn{
+        @include btn;
+        background-color:white;
+    }
+}
+
+// request-section
+
+.request-col{
+    background-color: $active-color;
+    color: white;
+
+    .flex{
+        padding: 3rem 2rem;
+
+        h5{
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .btn{
+        display: inline-block;
+        border-radius: 2rem;
+        background-color:$active-color;
+        color: white;
+        border: 1px solid white;
+        padding: 0rem 4rem;
+        font-size: 1.2rem;
+    }
+}
+
+// leader-section
+
+.leader-text{
+    color: $text-color;
+    margin-top: 2rem;
+}
+
+// client-section
+
+.client-sec{
+    background-color: $solution-bg-color;
+    padding: 8rem 0;
+    ul{
+        margin-top: 2rem;
+    }
+    ul li{
+        flex: 0 1 10%;
+    }
+    img {
+        filter: grayscale(500%);
+    }
+}
+
+// footer
+
+.footer-col{
+    background-color: $footer-color;
+    color: $text-color;
+    a{
+        color: $text-color;
+       
+    }
+
+    .Reach-us{
+        i{
+            color: $light-gray;
+            margin-right: 1rem;
+        }
+    }
+
+    h5{
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        color: $light-gray;
+    }
+
+    li{
+        line-height: 2.5;
+    }
+}

@@ -1,0 +1,83 @@
+// <!-- our-products-section-->
+
+.our-col-dif{
+    margin-bottom: 0;
+}
+
+.our-products-article article{
+
+    // margin-top: 4rem;
+    img{
+        width: 25%;
+    }
+
+    h4{
+        font-size: 1.7rem;
+        font-weight: 600;
+        margin: 1rem 0;
+    }
+
+    p{
+        font-size: 1.3rem;
+    }
+}
+
+.hr{
+    width: 100%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.256);
+    margin: 5rem 0;
+}
+
+// best-deals-section
+
+.best-deals-col{
+    background-color: $active-color;
+    color: white;
+    padding: 5rem 0;
+    
+
+    h5,p{
+        font-size: 1.3rem;
+    }
+
+    h5{
+        font-weight: 700;
+    }
+
+    p{
+        font-weight: 100;
+    }
+
+    hr{
+        margin: -1rem 3rem;
+        border: 1px solid rgba(255, 255, 255, 0.441);
+        
+    }
+
+    .btn{
+        @include btn;
+        background-color: $active-color;
+        border-color: white;
+        color: white;
+    }
+}
+
+// best-awarded
+
+.best-awarded{
+  
+    width: 900px;
+    margin: 0 auto;
+    p{
+        margin-top: 1.5rem;
+    }
+
+   
+}
+
+.awarded-article{
+    margin-top: 6rem;
+    h3,p{
+        line-height: 1.6;
+    }
+}
